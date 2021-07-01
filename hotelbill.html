@@ -1,0 +1,65 @@
+<html>
+<head>
+	<STYLE>
+		body
+		{
+				color:blue;
+		}
+		table
+		{
+		border-width:7px;
+		background-color:#ffccee;
+		border-spacing:10px;
+		border-style:ridge;
+		border-color:coral;
+		margin-left:500px;
+		height:300px;
+		width:500px;
+		}
+		th, tr
+		{
+			
+					font-family:mv boli;
+
+		}
+		
+		
+		input{
+		width: 200px;
+		height: 30px;
+		background-color:#80ffdf; 
+		border-color:#00cc99;
+		font-family:lithograph;
+		}
+	</STYLE>
+</head>
+	
+	
+<body>
+	<form method=post action="hotelbill.php" >
+	
+	<table align=center> <br>
+	
+	<tr><th colspan= 2><p style="font-size:33px; color:black; font-family:dauphin;">CASTLE RESTAURANT<p style="color:black; font-family:calibri;">Q-24, Oberoi Mall,<br>Goregaon East, Mumbai -<br>400065</p></p></th></tr>	
+	
+	
+	<tr> <td> <b>BILL No. &nbsp &nbsp &nbsp &nbsp   &nbsp  &nbsp &nbsp ::</b></td> <td> 
+	<input type=number name=blno >
+	
+	
+	<tr> <td><b> ITEMS&nbsp &nbsp &nbsp &nbsp   &nbsp  &nbsp  &nbsp &nbsp &nbsp ::</b> <br>(seperated with SPACEBAR)  </td> <td> 
+	<input type=text name=items > 
+
+	<tr> <td><b>PRICE </b>(per one) &nbsp  &nbsp &nbsp   ::<br>(seperated with SPACEBAR)  </td> <td> 
+	<input type=text name=prices > 
+	
+	<tr> <td> <b> QUANTITY ORDERED   ::</b> <br>(seperated with SPACEBAR)  </td> <td> 
+	<input type=text name=quantity > 
+
+	<tr> <td>
+	<input style="background-color:#b3ffff; color:red; border-color:#00cccc;" type=submit > </td> 
+	<td> <input style="background-color:#b3ffff; color:red; border-color:#00cccc;" type=reset>
+	</td></tr>
+</form>
+</body>
+</html>
